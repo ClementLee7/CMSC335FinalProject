@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="scheduleBuilder.css"> -->
+    <title>Home</title>
+    <style>
+        html {
+        font-size: 14px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1rem;
+            border-style: groove;
+            border-width: 1rem;
+        }
+
+        #innerBody{
+            padding: 1rem;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="innerBody">
+        <form action=<%- httpURL %> method="post">
+            <h1 id="searchHeader">Add Course</h1>
+            Course Name: 
+            <input type="text" id="courseNameText" name="courseName" placeholder="CMSC335">
+            <input type="submit" value="Add Course">
+            <br><br>
+            <a href="/">HOME</a>
+
+        </form>
+    </div>
+    <hr>
+    <br>
+    <br>
+    
+</body>
+
+</html>
